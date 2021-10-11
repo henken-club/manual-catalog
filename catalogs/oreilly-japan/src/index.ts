@@ -31,6 +31,7 @@ export const bootstrap = async () => {
   const $rows = await page.$$("#bookTable > tbody > tr");
   const list = await Promise.all(
     $rows.map(async ($row) => ({
+      type: "book",
       isbn: (await $row
         .$("td:nth-child(1)")
         .then(($el) => $el?.getProperty("textContent"))
