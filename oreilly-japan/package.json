@@ -1,0 +1,18 @@
+{
+  "name": "@henken-club-manual-catalog/oreilly-japan",
+  "scripts": {
+    "generate": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "puppeteer": "^10.4.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^16.10.3",
+    "@types/puppeteer": "^5.4.4",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
